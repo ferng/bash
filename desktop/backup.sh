@@ -1,3 +1,4 @@
 #!/bin/bash
+cd ~
 rm -rf backup.tgz
-tar --exclude './Documents/bin' --exclude './Documents/prog' -zcvf backup.tgz './Documents'
+tar -zcvf backup.tgz Documents bin .gnupg .password-store .ssh
